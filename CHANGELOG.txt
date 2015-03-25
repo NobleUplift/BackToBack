@@ -1,0 +1,8 @@
+CHANGELOG
+2013/09/09
+- Changed title of suite to BackToBack.
+- Changed title of Backup.ini to BackToBack.ini.
+- Moved the contents of Backup.bat to ParseINI.bat, so that Restore.ini can use it.
+2013/09/10
+06:55 PM
+ - Changed name of BackToBack.ini to be the name of the computer to back up.

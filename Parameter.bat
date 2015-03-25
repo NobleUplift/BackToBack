@@ -1,0 +1,15 @@
+ECHO %~1
+ECHO %~f1
+ECHO %~d1
+ECHO %~p1
+ECHO %~n1
+ECHO %~x1
+ECHO %~s1
+ECHO %~a1
+ECHO %~t1
+ECHO %~z1
+ECHO %~$PATH:1
+ECHO %~dp1
+ECHO %~nx1
+ECHO %~dp$PATH:1
+ECHO %~ftza1
