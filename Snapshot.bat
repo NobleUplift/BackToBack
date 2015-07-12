@@ -8,5 +8,5 @@ IF "%2"=="" (
 	ECHO The second argument must be the group to back up.
 	GOTO :EOF
 )
-ECHO CALL ParseINI.bat Snapshot %1 %2 %3 %4 %5
+REM ECHO CALL ParseINI.bat Snapshot %1 %2 %3 %4 %5
 CALL ParseINI.bat Snapshot %1 %2 %3 %4 %5
