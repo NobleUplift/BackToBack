@@ -5,6 +5,7 @@ IF "%ERRORLEVEL%"=="0" (
 	)
 	"C:\Program Files\7-Zip\7z" a -tzip "\\%4\%~2\SNAPSHOT\%~3.zip" "%~1" -xr^^!Cache
 	ECHO "C:\Program Files\7-Zip\7z" a -tzip "\\%4\%~2\SNAPSHOT\%~3.zip" "%~1" -xr^^!Cache
+	ATTRIB +R "\\%4\%~2\SNAPSHOT\%~3.zip"
 	"C:\Program Files\7-Zip\7z" t "\\%4\%~2\SNAPSHOT\%~3.zip" >> "\\%4\%~2\SNAPSHOT\Tests.txt
 	ECHO "C:\Program Files\7-Zip\7z" t "\\%4\%~2\SNAPSHOT\%~3.zip" >> "\\%4\%~2\SNAPSHOT\Tests.txt
 ) ELSE (

@@ -4,6 +4,8 @@ IF NOT EXIST "%~2" (
 )
 IF NOT EXIST "%~2%~3.zip" (
 	"C:\Program Files\7-Zip\7z" a "%~2%~3.zip" "%~1"
+	ECHO "C:\Program Files\7-Zip\7z" a "%~2%~3.zip" "%~1"
+	ATTRIB +R "%~2%~3.zip"
 	ECHO "C:\Program Files\7-Zip\7z" t "%~2%~3.zip" >> "%~2\Tests.txt
 	"C:\Program Files\7-Zip\7z" t "%~2%~3.zip" >> "%~2\Tests.txt
 ) ELSE (
