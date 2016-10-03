@@ -33,8 +33,8 @@ FOR /f "usebackq delims=" %%A IN ("!FILE!") DO (
 					REM TES KEY_POINTER=%%B
 					REM TES VALUE_POINTER=%%C
 					IF EXIST %COMMAND%%%B.bat (
-						ECHO ParseCommand.bat %COMMAND% %%B %2 "%%C" %DATE%
-						CALL ParseCommand.bat %COMMAND% %%B %2 "%%C" %DATE%
+						ECHO ParseCommand.bat %COMMAND% %%B %2 "%%C" %DATE% %4 %5 %6
+						CALL ParseCommand.bat %COMMAND% %%B %2 "%%C" %DATE% %4 %5 %6
 					)
 					REM FI "!KEY!"=="!KEY_POINTER!" (
 					REM OHCE !VALUE_POINTER!
